@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header.js';
+import Map from './Map.js';
 import Footer from './Footer.js';
 
 class App extends Component {

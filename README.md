@@ -1,4 +1,19 @@
+# NeighbourhoodMap	 
+NeighbourhoodMap is a Single Page Application (SPA) with a Google Map api and Foursquare api created in React.
+This project is the last project (CAPSTONE project 8) of the Udacity Full Nanodegree Program Front-End Web Development.
+
+## Install Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To install the Create React App from Facebook, I did the following: 
+
+1) Create a new folder/repo with the name of the project "neighbourhoodmap"
+2) Install the Create React App from [Create React App](https://github.com/facebook/create-react-app),
+using the below code comments in the Terminal.
+```
+npx create-react-app neighbourhoodmap
+cd neighbourhoodmap
+npm start
+```
 
 ## Available Scripts
 

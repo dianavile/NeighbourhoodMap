@@ -37,9 +37,9 @@ Inside the __project directory__, it will generate the initial project structure
 ```
 neighbourhoodmap
 ├── README.md
-├── (node_modules*) = this file will be created automatically after `npm install`, and is therefore not needed to upload here.  
+├── (node_modules) (=file will be created automatically after `npm install`. Added gitignore file to ignore. 
 ├── package.json (=here all dependencies will be installed.)
-├── .gitignore
+├── .gitignore (=file to instruct which files need to be ignored at production).
 ├── public
 │   ├── favicon.ico
 │   ├── index.html

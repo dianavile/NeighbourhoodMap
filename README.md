@@ -40,8 +40,8 @@ Inside that directory, it will generate the initial project structure and instal
 ```
 neighbourhoodmap
 ├── README.md
-├── node_modules
-├── package.json
+├── (node_modules*) = this file will be created automatically after `npm install`, and is therefore not needed to upload here.  
+├── package.json (=here all dependencies will be installed.)
 ├── .gitignore
 ├── public
 │   ├── favicon.ico

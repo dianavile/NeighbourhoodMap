@@ -33,6 +33,30 @@ METHOD 3:__Yarn__
 `yarn create react-app my-app`
 yarn create is available in Yarn 0.25+
 
+## Start Directory neighbourhood app
+Running any of these commands creates a start directory called inside the current folder. 
+Inside that directory, it will generate the initial project structure and install the dependencies:
+
+```
+neighbourhoodmap
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    └── serviceWorker.js
+```
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header.js';
 import Locations from './Locations.js';
 import Map from './Map.js';
+import mapStyle from './mapStyle.json';
 import Footer from './Footer.js';
 
 class App extends Component {

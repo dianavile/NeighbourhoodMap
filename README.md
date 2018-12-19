@@ -14,18 +14,22 @@ npx create-react-app neighbourhoodmap
 cd neighbourhoodmap
 npm start
 ```
-3) As seen above, I have chosen for __npx__ Yet, there are alternative ways to create a new app. 
+3) As seen above, I have chosen for __npx__ 
+Yet, there are alternative ways to create a new app. 
 To create a new app, you can choose one of the following three methods:
 
 METHOD 1: __npx__
+
 `npx create-react-app my-app`
 (npx comes with npm 5.2+ and higher, see instructions for older npm versions)
 
 METHOD 2:__npm__
+
 `npm init react-app my-app`
 npm init <initializer> is available in npm 6+
 
 METHOD 3:__Yarn__
+
 `yarn create react-app my-app`
 yarn create is available in Yarn 0.25+
 

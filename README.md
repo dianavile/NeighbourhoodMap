@@ -4,27 +4,6 @@ This project is the last project (CAPSTONE project 8) of the Udacity Full Nanode
 
 ![neighborhoodmap](https://github.com/dianavile/NeighbourhoodMap/blob/master/Neighbourhoodmap.png)
 
-Table of content
-=================
-__Setting Up__
-  - Install Create React App
-  - Start the project directory
-  - React Components
-
-__Deploying__
-  - Build 
-
-__Know bugs__
-I have one error, that I am not able to solve:
-- ![error in console](https://github.com/dianavile/NeighbourhoodMap/blob/master/error%20in%20console.png)
-- Possible solution: [unique keys for searchlist items](https://reactjs.org/docs/lists-and-keys.html#keys)
-
-__Version__
-__Contributors__
-__License__
-__References__
-
-
 Setting Up
 =================
 ## Installation Create React App
@@ -126,9 +105,10 @@ Version
 #### "version": "0.1.0" 
 This is the first piece of version information, coded from scratch.
 
-## Meta
-Diana Vilé – [@YourTwitter](https://twitter.com/dianavile)
-[https://github.com/dianavile/neighbourhoodmap](https://github.com/dianavile/)
+__Know bugs__
+I have one error, that I am not able to solve:
+- ![error in console](https://github.com/dianavile/NeighbourhoodMap/blob/master/error%20in%20console.png)
+- Possible solution: [unique keys for searchlist items](https://reactjs.org/docs/lists-and-keys.html#keys)
 
 Contributors
 =================
@@ -140,11 +120,9 @@ This project is distributed under the MIT licence.  See ``LICENSE`` for more inf
 
 References
 =================
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 - [Writing READMEs. Udacity](https://classroom.udacity.com/courses/ud777/)
 - [Google Maps Platform Documentation](https://developers.google.com/maps/documentation/)
 - [Google Maps JS API v3 - Simple Multiple Marker Example](https://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simple-multiple-marker-example)
 - [Foursquare Developers Documentation](https://developer.foursquare.com/docs)
-
-## Learn React
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [React documentation](https://reactjs.org/).

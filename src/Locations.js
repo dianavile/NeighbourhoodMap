@@ -37,7 +37,7 @@ class Locations extends Component {
                 <div className="menu">
                     <ul>
                         {this.props.venues.length && this.props.venues.map((place, index) => (
-                            <li><key= {place.venue.id} onClick={() => {this.props.selectedVenue(place.venue)}}> <a href='#Location1' > place.venue.name} </a></li>
+                            <li key={place.venue.id} onClick={() => {this.props.selectedVenue(place.venue)}}><a href='#Location1' >{place.venue.name} </a></li>
                             )
                         )
                         }

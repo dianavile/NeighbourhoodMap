@@ -107,6 +107,7 @@ This project is licenced under the MIT licence. See licence file.
 
 References
 =================
+- [Writing READMEs. Udacity](https://classroom.udacity.com/courses/ud777/)
 
 ## Learn React
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

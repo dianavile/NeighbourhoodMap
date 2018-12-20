@@ -70,6 +70,7 @@ neighbourhoodmap
 ```
 ## React Components
 The Neighbourhoodmap app contains the following __components__:
+```
 └── src
     ├── Header.css
     ├── Map.js
@@ -77,6 +78,7 @@ The Neighbourhoodmap app contains the following __components__:
     ├── Locations.js
     ├── SideBar.js
     ├── Footer.js
+```
 
 Deploying
 =================
@@ -97,9 +99,11 @@ Version
 
 Contributors
 =================
+As this project is part of a official FrontEnd Nanodegree curriculum, no contributors are allowed.
 
 License
 =================
+This project is licenced under the MIT licence. See licence file.
 
 References
 =================

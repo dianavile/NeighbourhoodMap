@@ -1,8 +1,20 @@
-Project 8  
-================= 
-# NeighbourhoodMap	
+# Project 8 NeighbourhoodMap 
+=================  	
 NeighbourhoodMap is a Single Page Application (SPA) with a Google Map api and Foursquare api created in React.
 This project is the last project (CAPSTONE project 8) of the Udacity Full Nanodegree Program Front-End Web Development.
+
+Table of content
+=================
+Setting Up
+  -  Install Create React App
+  -  Start the project directory
+  - React Components
+Deploying
+Know bugs
+Version
+Contributors
+License
+References
 
 Setting Up
 =================
@@ -78,10 +90,19 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Version History
+Version
 =================
 #### 0.0.0
 - This is the first piece of version information.
+
+Contributors
+=================
+
+License
+=================
+
+References
+=================
 
 ## Learn React
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

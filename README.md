@@ -16,8 +16,8 @@ __Deploying__
 
 __Know bugs__
 I have one error, that I am not able to solve:
-[!error in console]()
-[unique keys for searchlist items](https://reactjs.org/docs/lists-and-keys.html#keys)
+- [!error in console](https://github.com/dianavile/NeighbourhoodMap/blob/master/error%20in%20console.png)
+- Possible solution: [unique keys for searchlist items](https://reactjs.org/docs/lists-and-keys.html#keys)
 
 __Version__
  - Version

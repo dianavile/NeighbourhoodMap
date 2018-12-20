@@ -2,6 +2,8 @@
 NeighbourhoodMap is a Single Page Application (SPA) with a Google Map api and Foursquare api created in React.
 This project is the last project (CAPSTONE project 8) of the Udacity Full Nanodegree Program Front-End Web Development.
 
+![](header.png)
+
 Table of content
 =================
 __Setting Up__
@@ -12,15 +14,17 @@ __Deploying__
   - Build 
 __Know bugs__
 __Version__
+ - Version
+ - Meta
 __Contributors__
 __License__
 __References__
 
 Setting Up
 =================
-## Install Create React App
+## Installation Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-To install the Create React App from Facebook, I did the following: 
+To install: 
 
 1) Create a new folder/repo with the name of the project "neighbourhoodmap"
 2) Install the Create React App from [Create React App](https://github.com/facebook/create-react-app),
@@ -84,6 +88,8 @@ Deploying
 =================
 Explain how to deploy this project. 
 Maybe minimum computer specifications or browser requirements 
+Describe how to install all development dependencies and how to run an automated test-suite of some kind. 
+for multiple platforms.
 
 ### `npm run build`
 Builds the app for production to the `build` folder.<br>
@@ -97,18 +103,25 @@ Version
 #### 0.0.0
 - This is the first piece of version information.
 
+## Meta
+Diana Vilé – [@YourTwitter](https://twitter.com/dianavile)
+[https://github.com/dianavile/neighbourhoodmap](https://github.com/dianavile/)
+
 Contributors
 =================
 As this project is part of a official FrontEnd Nanodegree curriculum, no contributors are allowed.
 
 License
 =================
-This project is licenced under the MIT licence. See licence file.
+This project is distributed under the MIT licence.  See ``LICENSE`` for more information.
 
 References
 =================
 - [Writing READMEs. Udacity](https://classroom.udacity.com/courses/ud777/)
+- [Google Maps Platform Documentation](https://developers.google.com/maps/documentation/)
+- [Google Maps JS API v3 - Simple Multiple Marker Example](https://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simple-multiple-marker-example)
 
 ## Learn React
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 To learn React, check out the [React documentation](https://reactjs.org/).
+

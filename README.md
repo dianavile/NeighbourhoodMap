@@ -20,13 +20,8 @@ I have one error, that I am not able to solve:
 - Possible solution: [unique keys for searchlist items](https://reactjs.org/docs/lists-and-keys.html#keys)
 
 __Version__
- - Version
- - Meta
-
 __Contributors__
-
 __License__
-
 __References__
 
 

@@ -7,18 +7,28 @@ This project is the last project (CAPSTONE project 8) of the Udacity Full Nanode
 Table of content
 =================
 __Setting Up__
-  -  Install Create React App
-  -  Start the project directory
+  - Install Create React App
+  - Start the project directory
   - React Components
+
 __Deploying__
   - Build 
+
 __Know bugs__
+I have one error, that I am not able to solve:
+[!error in console]()
+[unique keys for searchlist items](https://reactjs.org/docs/lists-and-keys.html#keys)
+
 __Version__
  - Version
  - Meta
+
 __Contributors__
+
 __License__
+
 __References__
+
 
 Setting Up
 =================

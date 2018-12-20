@@ -1,5 +1,4 @@
-# Project 8 NeighbourhoodMap 
-=================  	
+# Project 8 NeighbourhoodMap 	
 NeighbourhoodMap is a Single Page Application (SPA) with a Google Map api and Foursquare api created in React.
 This project is the last project (CAPSTONE project 8) of the Udacity Full Nanodegree Program Front-End Web Development.
 

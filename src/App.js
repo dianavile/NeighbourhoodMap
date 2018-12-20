@@ -7,7 +7,6 @@ import Map from './Map.js';
 //import mapStyle from './mapStyle.json';
 import Footer from './Footer.js';
 
-
 class App extends Component {
   
   state = {

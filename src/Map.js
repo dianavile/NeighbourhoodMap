@@ -25,12 +25,13 @@ class Map extends Component {
                 {this.props.venues.length && this.props.venues.map((place, index) => (
                     <Marker key={place.venue.id} position={{lat: place.venue.location.lat, lng: place.venue.location.lng}} animation={place.verified ? window.google.maps.Animation.BOUNCE : null} onClick={() => this.props.toggleInfoBox(place.venue.id)}>
                         <div>
+                           { place.verified && 
                             <InfoBox options={{pixelOffset: new google.maps.Size(-120, -200) , closeBoxURL: '',boxStyle: {width: "200px"} }} visible={place.verified}>
                                 <div>
                                     <h2>{place.venue.name}</h2>
                                     <p>{place.venue.location.formattedAddress[0]}</p>
                                 </div>
-                            </InfoBox>
+                            </InfoBox> }
                         </div>
                     </Marker>
                     )

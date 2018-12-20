@@ -1,7 +1,11 @@
-# NeighbourhoodMap	 
+Project 8  
+================= 
+# NeighbourhoodMap	
 NeighbourhoodMap is a Single Page Application (SPA) with a Google Map api and Foursquare api created in React.
 This project is the last project (CAPSTONE project 8) of the Udacity Full Nanodegree Program Front-End Web Development.
 
+Setting Up
+=================
 ## Install Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 To install the Create React App from Facebook, I did the following: 
@@ -37,7 +41,6 @@ Inside the __project directory__, it will generate the initial project structure
 ```
 neighbourhoodmap
 ├── README.md
-├── (node_modules) (=file will be created automatically after `npm install`. Added gitignore file to ignore. 
 ├── package.json (=here all dependencies will be installed.)
 ├── .gitignore (=file to instruct which files need to be ignored at production).
 ├── public
@@ -53,8 +56,20 @@ neighbourhoodmap
     ├── logo.svg
     └── serviceWorker.js
 ```
-## 
+## React Components
+The Neighbourhoodmap app contains the following __components__:
+└── src
+    ├── Header.css
+    ├── Map.js
+    ├── MapStyle.json
+    ├── Locations.js
+    ├── SideBar.js
+    ├── Footer.js
 
+Deploying
+=================
+Explain how to deploy this project. 
+Maybe minimum computer specifications or browser requirements 
 
 ### `npm run build`
 Builds the app for production to the `build` folder.<br>
@@ -62,6 +77,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+Version History
+=================
+#### 0.0.0
+- This is the first piece of version information.
 
 ## Learn React
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

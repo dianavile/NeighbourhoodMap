@@ -58,5 +58,71 @@ html, body, main {
   font-size: 100%;
 }
 
+/*LOCATIONLIST- MENU*/
+/* Side navigation- Settings Off canvas nav element */
+/*SIDEBAR FROM W3school
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push*/
+nav  {
+  height: 100%; 
+  width: 300px; 
+  position: absolute; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+  background-color: #d4ae5f;
+  overflow-x: hidden; 
+  padding-top: 50px; 
+  transition: 0.2s ease; 
+  color: #fff;
+} 
 
+nav .search-locations{
+  text-align: center;
+}
+
+nav .search-locations input {
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Varela Round";
+  box-shadow: 5px 0 0 5px #d4ae5f;
+}
+
+nav .menu {
+  text-align: center;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+nav .menu ul li {
+  padding: 8px;
+  font-size: 20px;
+  border-bottom: 2px solid #d8C0a3;
+}
+
+/* Side navigation links */
+nav .menu ul li a {
+  color: #fff;
+  padding: 16px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+/* Change color on hover */
+nav .menu ul li a:hover {
+  background-color: #d8C0a3;
+  color:#111;
+  cursor: pointer;
+  border: 2px solid #d8C0a3;
+}
+
+nav .menu ul li i {
+  padding: 0 0 10px 0;
+  font-size:24px;
+}
 

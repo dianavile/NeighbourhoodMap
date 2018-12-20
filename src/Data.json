@@ -1,0 +1,137 @@
+[
+    {
+        "id": "Location1",
+        "name": "Baixada Santa Clara",
+        "position": {
+            "lat": 41.383819,
+            "lng": 2.177359
+        },
+        "streetAddress": "Baixada de Santa Clara 2, 08002 Barcelona"
+    },
+    {
+        "id": "Location2",
+        "name": "Balmes",
+        "position": {
+            "lat": 41.410117,
+            "lng": 2.137342
+        },
+        "streetAddress": "Balmes 470,08022 Barcelona"
+    },
+    {
+        "id": "Location3",
+        "name": "BonSucces",
+        "position": {
+            "lat": 41.383817,
+            "lng": 2.16963
+        },
+        "streetAddress": "Plaza Bonsucces 6, 08001 Barcelona"
+    },
+    {
+        "id": "Location4",
+        "name": "Bon Pastor",
+        "position": {
+            "lat": 41.383817,
+            "lng": 2.16963
+        },
+        "streetAddress": "Carrer Bon Pastor 3 Bajos, 08021 Barcelona"
+    },
+    {
+        "id": "Location5",
+        "name": "El Triangle",
+        "position": {
+            "lat": 41.385917,
+            "lng": 2.169042
+        },
+        "streetAddress": "Centro Comercial El Triangle, Plaza Catalunya 1-4,08002 Barcelona,Local F Planta Moll"
+    },
+    {
+        "id": "Location6",
+        "name": "Glories",
+        "position": {
+            "lat": 41.405328,
+            "lng": 2.191703
+        },
+        "streetAddress": "Centre comercial Les Glories,Av.Diagonal 208, Local 20C, 08018 Barcelona"
+    },
+    {
+        "id": "Location7",
+        "name": "L´illa",
+        "position": {
+            "lat": 41.389044,
+            "lng": 2.136188
+        },
+        "streetAddress": "Centre Comercial L'Illa Diagonal, Deu i mata 69-95, Local 111 Pb, 08029 Barcelona"
+    },
+    {
+        "id": "Location8",
+        "name": "Mallorca",
+        "position": {
+            "lat": 41.393231,
+            "lng": 2.1621
+        },
+        "streetAddress": "Mallorca 246, 08008 Barcelona"
+    },
+    {
+        "id": "Location9",
+        "name": "Paral.lel",
+        "position": {
+            "lat": 41.3752,
+            "lng": 2.161237
+        },
+        "streetAddress": "Avinguda del Paral.lel 130, 08015 Barcelona"
+    },
+    {
+        "id": "Location10",
+        "name": "Passeig de Gracia",
+        "position": {
+            "lat": 41.397569,
+            "lng": 2.15878
+        },
+        "streetAddress": "Passeig de Gracia 120, 08008 Barcelona"
+    },
+    {
+        "id": "Location11",
+        "name": "Plaza del Mar",
+        "position": {
+            "lat": 41.375384,
+            "lng": 2.189576
+        },
+        "streetAddress": "Plaza del Mar 1,08002 Barcelona"
+    },
+    {
+        "id": "Location12",
+        "name": "Plaza Espany",
+        "position": {
+            "lat": 41.375606,
+            "lng": 2.14847
+        },
+        "streetAddress": "Plaza Espanya 6-8,08014 Barcelona"
+    },
+    {
+        "id": "Location13",
+        "name": "Plaza Sagrada Familia",
+        "position": {
+            "lat": 41.402412,
+            "lng": 2.17428
+        },
+        "streetAddress": "Plaza Sagrada Familia 17, 08013 Barcelona"
+    },
+    {
+        "id": "Location14",
+        "name": "Plaza Universitat",
+        "position": {
+            "lat": 41.385259,
+            "lng": 2.163294
+        },
+        "streetAddress": "Plaza Universitat 1,08007 Barcelona"
+    },
+    {
+        "id": "Location15",
+        "name": "Ronda Sant Pere",
+        "position": {
+            "lat": 41.389969,
+            "lng": 2.174795
+        },
+        "streetAddress": "Ronda de Sant Pere 27, 08010 Barcelona"
+    }
+]

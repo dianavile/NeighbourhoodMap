@@ -2,7 +2,7 @@
 NeighbourhoodMap is a Single Page Application (SPA) with a Google Map api and Foursquare api created in React.
 This project is the last project (CAPSTONE project 8) of the Udacity Full Nanodegree Program Front-End Web Development.
 
-![](header.png)
+![neighborhoodmap](neighborhoodmap.png)
 
 Table of content
 =================
@@ -16,7 +16,7 @@ __Deploying__
 
 __Know bugs__
 I have one error, that I am not able to solve:
-- [!error in console](https://github.com/dianavile/NeighbourhoodMap/blob/master/error%20in%20console.png)
+- ![error in console](https://github.com/dianavile/NeighbourhoodMap/blob/master/error%20in%20console.png)
 - Possible solution: [unique keys for searchlist items](https://reactjs.org/docs/lists-and-keys.html#keys)
 
 __Version__

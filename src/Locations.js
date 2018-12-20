@@ -25,7 +25,7 @@ class Locations extends Component {
                             searchBox.addListener('places_changed', ()=> {
                                 const places = searchBox.getPlaces();
                                 if (places.length > 0) {
-                                    const position = {lat: places[0].geometry.location.lat(), lng: places[0].geometry.location.lng()};
+                                    const position = {lat: >places[0].geometry.location.lat(), lng: places[0].geometry.location.lng()};
                                     this.props.getNewLocation(position)
                                 }
                             })
@@ -37,7 +37,7 @@ class Locations extends Component {
                 <div className="menu">
                     <ul>
                         {this.props.venues.length && this.props.venues.map((place, index) => (
-                            <li><a href='#Location1' onClick={() => {this.props.selectedVenue(place.venue)}}>{place.venue.name} </a></li>
+                            <li><key= {place.venue.id} onClick={() => {this.props.selectedVenue(place.venue)}}> <a href='#Location1' > place.venue.name} </a></li>
                             )
                         )
                         }

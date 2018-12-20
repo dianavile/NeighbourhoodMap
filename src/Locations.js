@@ -25,7 +25,7 @@ class Locations extends Component {
                             searchBox.addListener('places_changed', ()=> {
                                 const places = searchBox.getPlaces();
                                 if (places.length > 0) {
-                                    const position = {lat: >places[0].geometry.location.lat(), lng: places[0].geometry.location.lng()};
+                                    const position = {lat: places[0].geometry.location.lat(), lng: places[0].geometry.location.lng()};
                                     this.props.getNewLocation(position)
                                 }
                             })

@@ -58,6 +58,12 @@ html, body, main {
   font-size: 100%;
 }
 
+.infoBox {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+}
+
 /*LOCATIONLIST- MENU*/
 /* Side navigation- Settings Off canvas nav element */
 /*SIDEBAR FROM W3school

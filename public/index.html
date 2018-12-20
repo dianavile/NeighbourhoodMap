@@ -28,6 +28,9 @@
     -->
      <!-- Add Google Font  -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round:300,400,500,700" />
+     <!-- Add Google API key asynchronous script  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&libraries=geometry,drawing,places"
+            async defer></script>
     <!-- Change App Title  -->
     <title>Buenas Migas Barcelona</title>
   </head>
@@ -36,13 +39,14 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <!-- Add Google Maps authorization Failure() alert -->
+    <script type="text/javascript">
+      function gm_authFailure() {
+        alert("Google Maps authentication failed! Map will not load correctly. Please check your API license key.")
+      }
+    </script>
     <!--
       This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->

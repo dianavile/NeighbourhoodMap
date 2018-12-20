@@ -4,16 +4,17 @@ This project is the last project (CAPSTONE project 8) of the Udacity Full Nanode
 
 Table of content
 =================
-Setting Up
+__Setting Up__
   -  Install Create React App
   -  Start the project directory
   - React Components
-Deploying
-Know bugs
-Version
-Contributors
-License
-References
+__Deploying__
+  - Build 
+__Know bugs__
+__Version__
+__Contributors__
+__License__
+__References__
 
 Setting Up
 =================

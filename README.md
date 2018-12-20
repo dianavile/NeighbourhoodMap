@@ -86,22 +86,40 @@ The Neighbourhoodmap app contains the following __components__:
 
 Deploying
 =================
-Explain how to deploy this project. 
-Maybe minimum computer specifications or browser requirements 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. 
-for multiple platforms.
+To deploy the neighbourhoopmap project, use the following command in your Terminal:
 
 ### `npm run build`
-Builds the app for production to the `build` folder.<br>
+This comment builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+More information about [deployment](https://facebook.github.io/create-react-app/docs/deployment).
+
+## Browser requirements
+The minimum default set of browsers for this project are:
+```
+"browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+```
+This means, the project is available on most default browsers, except on: Internet Explorer < 11 and opera_mini.
+More info on [changing default browsers](https://github.com/lukeed/pwa/issues/48)
+
+## Dependencies
+This project is build with the following dependencies:
+To install all development dependencies, check the provided links:
+- [Create React App](https://github.com/facebook/create-react-app)
+- [React v 16.5.2](https://www.npmjs.com/package/react/v/16.5.2)  
+- [React-dom v 16.5.2](https://www.npmjs.com/package/react-dom/v/16.5.2) 
+- [React-google-maps v 9.4.5](https://www.npmjs.com/package/react-google-maps)
+- [React-scripts v 2.1.1](https://www.npmjs.com/package/react-scripts)
 
 Version
 =================
-#### 0.0.0
-- This is the first piece of version information.
+#### "version": "0.1.0" 
+This is the first piece of version information, coded from scratch.
 
 ## Meta
 Diana Vilé – [@YourTwitter](https://twitter.com/dianavile)
@@ -120,8 +138,8 @@ References
 - [Writing READMEs. Udacity](https://classroom.udacity.com/courses/ud777/)
 - [Google Maps Platform Documentation](https://developers.google.com/maps/documentation/)
 - [Google Maps JS API v3 - Simple Multiple Marker Example](https://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simple-multiple-marker-example)
+- [Foursquare Developers Documentation](https://developer.foursquare.com/docs)
 
 ## Learn React
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 To learn React, check out the [React documentation](https://reactjs.org/).
-

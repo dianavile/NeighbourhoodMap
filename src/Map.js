@@ -15,6 +15,7 @@ class Map extends Component {
 
     render() {
         return (
+            //Default attributes and starting point GoogleMap
             <GoogleMap
                 defaultZoom={8}
                 defaultCenter={{ lat: 41.3851, lng: 2.1734}}

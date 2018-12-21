@@ -134,7 +134,7 @@ License
 =================
 This project is distributed under the MIT licence.  See ``LICENSE`` for more information.
 
-References
+Code References
 =================
 - [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 - [Writing READMEs. Udacity](https://classroom.udacity.com/courses/ud777/)
@@ -142,3 +142,4 @@ References
 - [Google Maps JS API v3 - Simple Multiple Marker Example](https://stackoverflow.com/questions/3059044/google-maps-js-api-v3-simple-multiple-marker-example)
 - [Foursquare Developers Documentation](https://developer.foursquare.com/docs)
 - [React documentation](https://reactjs.org/).
+- [W3school- Sidebar](https://www.w3schools.com/w3css/w3css_sidebar.asp)

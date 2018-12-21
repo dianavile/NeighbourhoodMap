@@ -7,6 +7,8 @@ This project is the last project (CAPSTONE project 8) of the Udacity Full Nanode
 Setting Up
 =================
 ## Installation Create React App
+To start using this project follow these steps:
+* Git clone this [repository](https://github.com/dianavile/Neighbourhoodmap.git) or download as .zip file
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 To install: 
 
@@ -74,9 +76,16 @@ To deploy the neighbourhoopmap project, use the following command in your Termin
 
 ### `npm run build`
 This comment builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-The build is minified and the filenames include the hashes.<br>
+It bundles React in production mode and optimizes the build for the best performance in a minified version.
 More information about [deployment](https://facebook.github.io/create-react-app/docs/deployment).
+
+### #Service Worker
+`Create React App`includes a service worker, by default. 
+To enable it, the application needs to be runned in production build mode, with `npm run build` as described above, followed by:
+* cd into the build directory
+* `npm install -g serve` (to install static server in terminal).
+* `serve -s build`  (to run it from terminal).
+* localhost:5000 (to visit the project offline with the service worker)
 
 ## Browser requirements
 The minimum default set of browsers for this project are:
@@ -93,12 +102,21 @@ More info on [changing default browsers](https://github.com/lukeed/pwa/issues/48
 
 ## Dependencies
 This project is build with the following dependencies:
+
+#### Dev dependencies (npm packages)
 To install all development dependencies, check the provided links:
 - [Create React App](https://github.com/facebook/create-react-app)
 - [React v 16.5.2](https://www.npmjs.com/package/react/v/16.5.2)  
 - [React-dom v 16.5.2](https://www.npmjs.com/package/react-dom/v/16.5.2) 
 - [React-google-maps v 9.4.5](https://www.npmjs.com/package/react-google-maps)
 - [React-scripts v 2.1.1](https://www.npmjs.com/package/react-scripts)
+
+##### API
+* [Google Maps API](https://cloud.google.com/maps-platform/)
+* [Foursquare API](https://developer.foursquare.com/)
+
+#### Design
+* [Google Fonts](https://fonts.google.com/)
 
 Version
 =================

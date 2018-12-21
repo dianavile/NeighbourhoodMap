@@ -4,7 +4,7 @@ import './App.css';
 //Stateless Functional Component
 const Footer = (props) => {
     return (
-        <footer id='footer-wrapper'>           
+         <footer id='footer-wrapper' role='contentinfo'>          
             <p className="copyright"> 2018.Udacity-FEND.
                 Made with ❤ by 
             <a id='footer-link' 

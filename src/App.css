@@ -2,36 +2,6 @@
     box-sizing: border-box;
 }
 
-/* Header */
-.header {
-  background-color: #fff;
-  text-align: center;
-  /* min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);*/
-}
- 
-.header-title, {
-  margin: 0;
-  padding: 0 50Px 0 50px;
-  color: #000;
-  font-family: "Varela Round"; 
-  font-size: 40px; 
-  position: relative;
-}
-
-.sub-title, {
-font-size: 16px;
-}
-
-/* GoogleMap */
-.GoogleMap {
-  height: 100vh;
-}
-
 /* Make the main page fill the entire screen*/
 html, body, main {
   height: 100%;
@@ -39,35 +9,50 @@ html, body, main {
   margin: 0;
   padding: 0;
   font-family: "Varela Round";
-}
-
-/* Footer */
-.copyright {
-  height: 2vh;
-  margin: 10px;
-  padding: 10px;
-  font-family: "Varela Round";
-  font-size: 18px;
-  text-align: center; 
-  color: #000;
   background-color: #fff;
+}
+
+/* Header */
+.header {
   position: relative;
+  background-color: #fff;
+  text-align: center;
+  height: calc(100vh / 6);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.header-title, {
+  position: relative;
+  margin: 0px;
+  padding: 0 50Px 0 50px;
+  color: #000;
+  font-family: "Varela Round"; 
+  font-size: 40px; 
 }
 
-.footer-wrapper {
-  font-size: 100%;
+.sub-title, {
+font-size: 18px;
 }
 
-.infoBox {
-background-color: #fff;
-padding: 20px;
-border-radius: 5px;
+/* GoogleMap */
+.GoogleMap {
+  height: 100vh;
 }
 
 /*LOCATIONLIST- MENU*/
-/* Side navigation- Settings Off canvas nav element */
-/*SIDEBAR FROM W3school
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push*/
+.nav-menu {
+  font-size: 22px;
+  left: 0;
+  padding: 0px 0px 5px 15px;
+  margin: 0px;
+  bottom: 0;
+}
+
+/*SIDEBAR FROM W3school https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push*/
 nav  {
   height: 100%; 
   width: 300px; 
@@ -76,19 +61,31 @@ nav  {
   top: 0;
   left: 0;
   margin-bottom: 0;
+  color: #000;
   background-color: #d4ae5f;
   overflow-x: hidden; 
-  padding-top: 50px; 
-  transition: 0.2s ease; 
-  color: #fff;
-} 
+  padding-top: 10px; 
+  transition: 0.2s ease;
+}  
+
+/* Side navigation- Settings Off canvas nav element */
+/*nav  {
+width: 0px;
+position: fixed;
+display: block;
+z-index: 1; 
+left: 0;
+background-color: #111; 
+transition: 0.5s; 
+overflow-x: hidden;
+}*/
 
 nav .search-locations{
   text-align: center;
 }
 
 nav .search-locations input {
-  padding: 10px;
+  padding: 5px;
   font-size: 20px;
   font-family: "Varela Round";
   box-shadow: 5px 0 0 5px #d4ae5f;
@@ -112,7 +109,7 @@ nav .menu ul li {
 
 /* Side navigation links */
 nav .menu ul li a {
-  color: #fff;
+  color: #000;
   padding: 16px 0;
   text-decoration: none;
   display: block;
@@ -131,4 +128,31 @@ nav .menu ul li i {
   padding: 0 0 10px 0;
   font-size:24px;
 }
+
+/* Footer */
+.copyright {
+  height: 2vh;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  font-family: "Varela Round";
+  font-size: 18px;
+  text-align: center; 
+  color: #000;
+  background-color: #fff;
+  position: relative;
+}
+
+.footer-wrapper {
+  font-size: 100%;
+}
+
+/* Infobox */
+.infoBox {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+}
+
+/* Media queries */
 

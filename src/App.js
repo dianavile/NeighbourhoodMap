@@ -13,9 +13,10 @@ class App extends Component {
         venues: [],
         lat: 41.3851,
         lng: 2.1734,
-        zoom: 8,
+        zoom: 12,
     }
   
+// Foursquare API Information  
   getPlaces =() => {
         fetch('https://api.foursquare.com/v2/venues/explore?client_id=T24PWGNQT33GTQ1ZVJYJVUFFIOXPZTKIGYIA0WD1D2NQDVSJ&client_secret=EGPDEHMSUVQUZZXBRLAWE4FZ3OOIXVEDSWPSXDD5UXCZVDP0&v=20180323&limit=10&ll='+this.state.lat+','+this.state.lng +'&query=buenas migas')
             .then(res => res.json())
@@ -61,22 +62,25 @@ class App extends Component {
 
   render() {
     return (
+      <main>
       <div className="App">
-         <a href="#menu" className="skip-link">Skip to content</a>
          <Header />
-         <Locations  getNewLocation={this.getNewLocation}
-                     venues={this.state.venues}
-                     selectedVenue={this.selectedVenue}/>
+         <Locations getNewLocation={this.getNewLocation}
+                    venues={this.state.venues}
+                    selectedVenue={this.selectedVenue}/>
+        <section id='map-area' tabIndex='0'>
          <Map venues={this.state.venues}
-                     containerElement={<div style={{height: `800px`}} />}
-                     mapElement= {<div style={{height: `100%`}} />}
-                     toggleInfoBox={this.toggleInfobox}
-                     lat={this.state.lat}
-                     lng={this.state.lng}
-                     zoom={this.state.zoom}
+                    containerElement={<div style={{height: `800px`}} />}
+                    mapElement= {<div style={{height: `100%`}} />}
+                    toggleInfoBox={this.toggleInfobox}
+                    lat={this.state.lat}
+                    lng={this.state.lng}
+                    zoom={this.state.zoom}
           />
+        </section>
          <Footer />
       </div>
+      </main>  
     );
   }
 }

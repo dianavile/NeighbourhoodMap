@@ -14,7 +14,7 @@ class Locations extends Component {
      render() {
         return (
             <nav>
-                <div className='search-locations'>
+                <div className='search-locations' role='application'>
                     <input
                         className="Searchbox"
                         ref={(c) => {
@@ -30,14 +30,19 @@ class Locations extends Component {
                                 }
                             })
                         }}
-                        placeholder="Search a place..."
                         type="text"
+                        placeholder="Search"
+                        aria-label='Search for Buenas Migas lunch place in Barcelona'
                     />
                 </div>
                 <div className="menu">
-                    <ul>
+                    <ul aria-label='Lunch locations' role='menu'>
                         {this.props.venues.length && this.props.venues.map((place, index) => (
-                            <li key={place.venue.id} onClick={() => {this.props.selectedVenue(place.venue)}}><a href='#Location1' >{place.venue.name} </a></li>
+                            <li key={place.venue.id} 
+                            tabIndex='0'
+                            role='menuitem'
+                            onClick={() => {this.props.selectedVenue(place.venue)}}>
+                            <a href='#Location1' >{place.venue.name} </a></li>
                             )
                         )
                         }

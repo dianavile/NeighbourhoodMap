@@ -8,7 +8,7 @@ html, body, main {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Varela Round";
+  font-family: 'Varela Round';
   background-color: #fff;
 }
 
@@ -52,10 +52,10 @@ font-size: 18px;
   bottom: 0;
 }
 
-/*SIDEBAR FROM W3school https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push*/
+/*Sidebar partly taken from W3school https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_sidenav_push*/
 nav  {
   height: 100%; 
-  width: 300px; 
+  width: 280px; 
   position: absolute; 
   z-index: 1; 
   top: 0;
@@ -68,18 +68,6 @@ nav  {
   transition: 0.2s ease;
 }  
 
-/* Side navigation- Settings Off canvas nav element */
-/*nav  {
-width: 0px;
-position: fixed;
-display: block;
-z-index: 1; 
-left: 0;
-background-color: #111; 
-transition: 0.5s; 
-overflow-x: hidden;
-}*/
-
 nav .search-locations{
   text-align: center;
 }
@@ -88,7 +76,9 @@ nav .search-locations input {
   padding: 5px;
   font-size: 20px;
   font-family: "Varela Round";
+  text-align: center;
   box-shadow: 5px 0 0 5px #d4ae5f;
+  width: 90%;
 }
 
 nav .menu {
@@ -155,4 +145,36 @@ border-radius: 5px;
 }
 
 /* Media queries */
+@media screen and (min-width: 368px) {
+  nav .search-locations input, 
+  nav .menu ul li {
+    max-width: 90%;
+  }
+}
 
+@media screen and (min-width: 600px) {
+  nav .search-locations input {
+    max-width: 75%;
+  }
+  .map {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  nav .search-locations input {
+    max-width: 90%;
+  }
+}
+
+/* Side navigation- Settings Off canvas nav element */
+/*nav  {
+width: 0px;
+position: fixed;
+display: block;
+z-index: 1; 
+left: 0;
+background-color: #111; 
+transition: 0.5s; 
+overflow-x: hidden;
+}*/

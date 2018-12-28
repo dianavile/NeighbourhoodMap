@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './App.css';
-const google = window.google;
+var google = window.google;
 
 /* Filter the list of locations
 * This component contains all needed to filter the locations

@@ -5,6 +5,13 @@ import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import InfoBox from "react-google-maps/lib/components/addons/InfoBox";
 const google = window.google;
 
+// fallbackfunction, to handle errors when google map fails to load 
+    window.gm_authFailure = (err) => {
+        const mapWarning = document.querySelector('.map');
+        mapWarning.innerHTML = `<div class='warning-dialog'>
+        <h2 class='warning-title'>Warning</h2>
+        <p class='warning-message'>The app failed to load properly. Please check the console<p></div>`;
+    }
 
 //Map Component
 class Map extends Component {

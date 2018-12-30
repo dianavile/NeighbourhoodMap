@@ -7,14 +7,6 @@ import Map from './Map.js';
 //import mapStyle from './mapStyle.json';
 import Footer from './Footer.js';
 
-// Add error handling for app googlemap authFailure
-window.gm_authFailure = (err) => {
-    const mapWarning = document.querySelector('.map');
-    mapWarning.innerHTML = `<div class='warning-dialog'>
-    <h2 class='warning-title'>Warning</h2>
-    <p class='warning-message'>The app failed to load properly. Please check more info in console<p></div>`;
-}
-
 class App extends Component {
   
   state = {
@@ -25,21 +17,20 @@ class App extends Component {
         error: false
     }
   
-// Foursquare API Information  
-  getPlaces =() => {
-        fetch('https://api.foursquare.com/v2/venues/explore?client_id=T24PWGNQT33GTQ1ZVJYJVUFFIOXPZTKIGYIA0WD1D2NQDVSJ&client_secret=EGPDEHMSUVQUZZXBRLAWE4FZ3OOIXVEDSWPSXDD5UXCZVDP0&v=20180323&limit=10&ll='+this.state.lat+','+this.state.lng +'&query=buenas migas')
-            .then(res => res.json())
-            .then(res => {
-                this.setState({venues: res.response.groups[0].items})
-                console.log(res)
-            })
-            .catch(function(err) {
-                // Code for handling errors
-                console.log(err)
-                alert("failed while fetching")
-                this.setState({ error: true }); // Change state error to true to indicate the error 
-            });
-    }
+//Foursquare API Information  
+getPlaces =() => {
+    return fetch('https://api.foursquare.com/v2/venues/explore?client_id=T24PWGNQT33GTQ1ZVJYJVUFFIOXPZTKIGYIA0WD1D2NQDVSJ&client_secret=EGPDEHMSUVQUZZXBRLAWE4FZ3OOIXVEDSWPSXDD5UXCZVDP0&v=20180323&limit=10&ll='+this.state.lat+','+this.state.lng +'&query=buenas migas')
+        .then(res => res.json())
+        .then(res => {
+            this.setState({venues: res.response.groups[0].items})
+            console.log(res)
+        })
+        .catch(function(err) {
+           // handle errors
+            console.log(err)
+            alert('Foursquare API error: failed while fetching' + err)
+        });
+}
 
     getNewLocation = (coords) => {
         this.setState({

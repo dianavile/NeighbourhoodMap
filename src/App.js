@@ -7,6 +7,14 @@ import Map from './Map.js';
 //import mapStyle from './mapStyle.json';
 import Footer from './Footer.js';
 
+// Add error handling for app googlemap authFailure
+window.gm_authFailure = (err) => {
+    const mapWarning = document.querySelector('.map');
+    mapWarning.innerHTML = `<div class='warning-dialog'>
+    <h2 class='warning-title'>Warning</h2>
+    <p class='warning-message'>The app failed to load properly. Please check more info in console<p></div>`;
+}
+
 class App extends Component {
   
   state = {
@@ -14,6 +22,7 @@ class App extends Component {
         lat: 41.3851,
         lng: 2.1734,
         zoom: 12,
+        error: false
     }
   
 // Foursquare API Information  
@@ -27,6 +36,8 @@ class App extends Component {
             .catch(function(err) {
                 // Code for handling errors
                 console.log(err)
+                alert("failed while fetching")
+                this.setState({ error: true }); // Change state error to true to indicate the error 
             });
     }
 

@@ -32,6 +32,12 @@
      <!-- Add Google API key asynchronous script  -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&libraries=geometry,drawing,places"
             async defer></script>
+     <!-- Add Google Maps authorization Failure() alert -->
+    <script type="text/javascript">
+      function gm_authFailure() {
+        alert("Google Maps authentication failed! Map will not load correctly. Please check your API license key.")
+      }
+    </script>
     <!-- Change App Title  -->
     <title>Buenas Migas Barcelona</title>
   </head>
@@ -43,10 +49,4 @@
         You need to enable JavaScript to run this app.
       </noscript>
   </body>
-    <!-- Add Google Maps authorization Failure() alert -->
-    <script type="text/javascript">
-      function gm_authFailure() {
-        alert("Google Maps authentication failed! Map will not load correctly. Please check your API license key.")
-      }
-    </script>
 </html>

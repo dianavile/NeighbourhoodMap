@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './App.css';
-var google = window.google;
+let google = window.google;
 
 /* Filter the list of locations
 * This component contains all needed to filter the locations
@@ -21,7 +21,8 @@ class Locations extends Component {
                             if (!c) {
                                 return;
                             }
-                            const searchBox = new google.maps.places.SearchBox(c, { types: ['geocode'] });
+                            const searchBox = new window.google.maps.places.SearchBox(c, { types: ['geocode'] });
+                            console.log(google)
                             searchBox.addListener('places_changed', ()=> {
                                 const places = searchBox.getPlaces();
                                 if (places.length > 0) {

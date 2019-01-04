@@ -23,7 +23,8 @@ class Locations extends Component {
                             }
                             const searchBox = new window.google.maps.places.SearchBox(c, { types: ['geocode'] });
                             console.log(google)
-                            searchBox.addListener('places_changed', ()=> {
+                            searchBox.addListener('places_changed', (event)=> {
+                                event.preventDefault();
                                 const places = searchBox.getPlaces();
                                 if (places.length > 0) {
                                     const position = {lat: places[0].geometry.location.lat(), lng: places[0].geometry.location.lng()};

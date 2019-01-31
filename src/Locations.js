@@ -30,7 +30,7 @@ class Locations extends Component {
                                     const position = {lat: places[0].geometry.location.lat(), lng: places[0].geometry.location.lng()};
                                     this.props.getNewLocation(position)
                                 }
-                            })
+                            }, {passive: true})
                         }}
                         type="text"
                         placeholder="Search"

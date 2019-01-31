@@ -18,6 +18,7 @@ using the below code comments in the Terminal.
 ```
 npx create-react-app neighbourhoodmap
 cd neighbourhoodmap
+npm fix audit (*there is a security issue, you can fix it using this code)
 npm start
 ```
 3) As seen above, I have chosen for __npx__ 
@@ -124,7 +125,7 @@ Version
 This is the first piece of version information, coded from scratch.
 
 __Know bugs__
-No known bugs.
+working hard to get rid of the bugs.
 
 Contributors
 =================

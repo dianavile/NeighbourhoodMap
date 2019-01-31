@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
+//Components
 import Header from './Header.js';
 import Locations from './Locations.js';
-//import * as Data from './Data.json';
 import Map from './Map.js';
-//import mapStyle from './mapStyle.json';
 import Footer from './Footer.js';
 
 class App extends Component {
@@ -13,7 +12,7 @@ class App extends Component {
         venues: [],
         lat: 41.3851,
         lng: 2.1734,
-        zoom: 12,
+        zoom: 14,
         error: false
     }
   

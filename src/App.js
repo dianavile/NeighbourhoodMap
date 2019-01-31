@@ -12,7 +12,7 @@ class App extends Component {
         venues: [],
         lat: 41.3851,
         lng: 2.1734,
-        zoom: 14,
+        zoom: 12,
         error: false
     }
   

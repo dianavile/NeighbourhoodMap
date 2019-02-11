@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
 * {
     box-sizing: border-box;
 }
@@ -8,7 +10,6 @@ html, body, main {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Varela Round';
   background-color: #fff;
 }
 
@@ -30,7 +31,6 @@ html, body, main {
   margin: 0px;
   padding: 0 50Px 0 50px;
   color: #000;
-  font-family: "Varela Round"; 
   font-size: 40px; 
 }
 
@@ -75,7 +75,6 @@ nav .search-locations{
 nav .search-locations input {
   padding: 5px;
   font-size: 20px;
-  font-family: "Varela Round";
   text-align: center;
   box-shadow: 5px 0 0 5px #d4ae5f;
   width: 90%;
@@ -125,7 +124,6 @@ nav .menu ul li i {
   width: 100%;
   margin: 10px;
   padding: 10px;
-  font-family: "Varela Round";
   font-size: 18px;
   text-align: center; 
   color: #000;

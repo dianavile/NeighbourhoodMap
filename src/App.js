@@ -15,7 +15,14 @@ class App extends Component {
         zoom: 12,
         error: false
     }
-  
+
+ /* function Load GoogleMap with GoogleApi key */
+ loadMap = () => {
+    return loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&libraries=,drawing,places')
+    window.initMap = this.initMap;
+    window.google = {};
+} 
+
 //Foursquare API Information  
 getPlaces =() => {
     return fetch('https://api.foursquare.com/v2/venues/explore?client_id=T24PWGNQT33GTQ1ZVJYJVUFFIOXPZTKIGYIA0WD1D2NQDVSJ&client_secret=EGPDEHMSUVQUZZXBRLAWE4FZ3OOIXVEDSWPSXDD5UXCZVDP0&v=20180323&limit=10&ll='+this.state.lat+','+this.state.lng +'&query=buenas migas')
@@ -92,5 +99,15 @@ getPlaces =() => {
     );
   }
 }
+
+//Load map in App.js with asynchronous script 
+function loadScript(url) {
+    const index = window.document.getElementsByTagName("script")[0];
+    const script = window.document.createElement("script");
+    script.src = url;
+    script.async = true;
+    script.defer = true;
+    index.parentNode.insertBefore(script, index);
+  }
 
 export default App;

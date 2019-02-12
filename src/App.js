@@ -55,16 +55,11 @@ getPlaces =() => {
         )
     }
 
-    componentDidMount() {
+       componentDidMount() {
         this.getPlaces();
-     /* // fallbackfunction, to handle errors when google map fails to load 
-            window.gm_authFailure = (err) => {
-            const mapWarning = document.querySelector('.map');
-            mapWarning.innerHTML = `<div class='warning-dialog'>
-            <h2 class='warning-title'>Warning</h2>
-            <p class='warning-message'>The app failed to load properly. Please check the console<p></div>`;
-        }*/
-    }
+        window.gm_authFailure = function() {
+            alert("Google Maps Authentication failed!");
+    };
 
     toggleInfobox = (id) => {
         this.setState(() => ({

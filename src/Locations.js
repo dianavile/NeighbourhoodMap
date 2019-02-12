@@ -21,7 +21,7 @@ class Locations extends Component {
                             if (!c) {
                                 return;
                             }
-                            const searchBox = new google.maps.places.SearchBox(c, { types: ['geocode'] });
+                            const searchBox = new window.google.maps.places.SearchBox(c, { types: ['geocode'] });
                             console.log(google)
                             searchBox.addListener('places_changed', (event)=> {
                                 event.preventDefault();

@@ -24,7 +24,7 @@ class Map extends Component {
         return (
             //Default attributes and starting point GoogleMap
             <GoogleMap
-                defaultZoom={8}
+                defaultZoom={10}
                 defaultCenter={{ lat: 41.3851, lng: 2.1734}}
                 defaultOptions={{ styles: this.state.mapstyle }}
                 zoom={this.props.zoom}

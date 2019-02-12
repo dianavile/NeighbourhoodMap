@@ -13,15 +13,17 @@ class App extends Component {
         lat: 41.3851,
         lng: 2.1734,
         zoom: 12,
-        error: false
+        error: false,
+        loadMap: "";
     }
 
- /* function Load GoogleMap with GoogleApi key */
+ /* function Load GoogleMap with GoogleApi key */ 
  loadMap = () => {
     return loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&libraries=,drawing,places')
+    // eslint-disable-next-line
     window.initMap = this.initMap;
     window.google = {};
-} 
+}
 
 //Foursquare API Information  
 getPlaces =() => {

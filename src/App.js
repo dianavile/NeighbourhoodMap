@@ -110,7 +110,7 @@ getPlaces =() => {
 }
 
 //Load map in App.js with asynchronous script function loadScript() {
-    let url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&,places&initMap' ;
+ let url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&,places&initMap' ;
      
     const index = window.document.getElementsByTagName("script")[0];
     const script = window.document.createElement("script");
@@ -119,6 +119,6 @@ getPlaces =() => {
     script.defer = true;
     index.parentNode.insertBefore(script, index);
     console.log(index)
-  }
-  
-  export default App;
+}
+
+export default App;

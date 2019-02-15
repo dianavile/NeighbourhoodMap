@@ -165,14 +165,3 @@ border-radius: 5px;
   }
 }
 
-/* Side navigation- Settings Off canvas nav element */
-/*nav  {
-width: 0px;
-position: fixed;
-display: block;
-z-index: 1; 
-left: 0;
-background-color: #111; 
-transition: 0.5s; 
-overflow-x: hidden;
-}*/

@@ -14,16 +14,16 @@ class App extends Component {
         lng: 2.1734,
         zoom: 12,
         error: false,
-        loadMap: "";
+        loadMap: ""
     }
 
  /* function Load GoogleMap with GoogleApi key */ 
  loadMap = () => {
-    return loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&libraries=,drawing,places')
-    // eslint-disable-next-line
-    window.initMap = this.initMap;
-    window.google = {};
-}
+    debugger;
+    //window.google = {};
+    return loadScript('https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&libraries=,drawing,places&callback=initMap')
+    
+};
 
 //Foursquare API Information  
 getPlaces =() => {
@@ -57,11 +57,14 @@ getPlaces =() => {
         )
     }
 
-       componentDidMount() {
+       componentDidMount() {window.initMap = this.initMap;
         this.getPlaces();
+        debugger; 
+        loadScript();
         window.gm_authFailure = function() {
-            alert("Google Maps Authentication failed!");
-    };
+            alert("Google Maps Authentication failed!");       
+      };
+}
 
     toggleInfobox = (id) => {
         this.setState(() => ({
@@ -72,6 +75,15 @@ getPlaces =() => {
         }))
     };  
 
+    initMap = () => {
+    // Create A Map
+    // eslint-disable-next-line 
+       const map = new window.google.maps.Map(document.getElementById('map'), {
+            center: {lat: 42.6413661, lng: 18.1075044},
+            zoom: 14
+       })     
+    }
+
   render() {
     return (
       <main>
@@ -80,7 +92,7 @@ getPlaces =() => {
          <Locations getNewLocation={this.getNewLocation}
                     venues={this.state.venues}
                     selectedVenue={this.selectedVenue}/>
-        <section id='map-area' tabIndex='0'>
+        <section id='map-area' tabIndex='0' aria-label="map">
          <Map venues={this.state.venues}
                     containerElement={<div style={{height: `800px`}} />}
                     mapElement= {<div style={{height: `100%`}} />}
@@ -97,14 +109,16 @@ getPlaces =() => {
   }
 }
 
-//Load map in App.js with asynchronous script 
-function loadScript(url) {
+//Load map in App.js with asynchronous script function loadScript() {
+    let url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&,places&initMap' ;
+     
     const index = window.document.getElementsByTagName("script")[0];
     const script = window.document.createElement("script");
     script.src = url;
     script.async = true;
     script.defer = true;
     index.parentNode.insertBefore(script, index);
+    console.log(index)
   }
-
-export default App;
+  
+  export default App;

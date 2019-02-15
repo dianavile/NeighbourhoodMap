@@ -109,9 +109,9 @@ getPlaces =() => {
   }
 }
 
-//Load map in App.js with asynchronous script function loadScript() {
- let url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&,places&initMap' ;
-     
+//Load map in App.js with asynchronous script function loadScript() 
+{
+    let url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9lgikaoNYwuS1Wx7U-ucJOLxTu62rc4&,places&v=3&callback="initMap"';    
     const index = window.document.getElementsByTagName("script")[0];
     const script = window.document.createElement("script");
     script.src = url;
